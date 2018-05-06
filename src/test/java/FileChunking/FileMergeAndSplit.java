@@ -24,7 +24,7 @@ public class FileMergeAndSplit {
         FileSpliting fileSpliting = new FileSpliting();
         listOfFiles = fileSpliting.splitFile(fileToBeChunked);
         FileMerging fileMerging = new FileMerging();
-        fileMerging.mergeFiles(listOfFiles, fileToBetested);
+        fileMerging.merge(listOfFiles, fileToBetested);
 
         Path f1Path = Paths.get("src//main//resources//TestFiles//test.mp3");
         byte[] f1 = Files.readAllBytes(f1Path);

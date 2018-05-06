@@ -17,7 +17,7 @@ public class Main {
         FileSpliting fileSpliting = new FileSpliting();
         listOfFiles = fileSpliting.splitFile(fileToBeChunked);
         FileMerging fileMerging = new FileMerging();
-        fileMerging.mergeFiles(listOfFiles, fileToBetested);
+        fileMerging.merge(listOfFiles, fileToBetested);
     }
 
 }
